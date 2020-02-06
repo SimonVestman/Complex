@@ -1,10 +1,19 @@
+/*
+Komplex datatyp
+skapat 2020-02-06
+*/
 public class Complex {
-    private double a;
-    private double b;
+    private double re;
+    private double im;
 
-    public Complex(double a, double b) {
-        this.a = a;
-        this.b = b;
+    public Complex (double Re, double Im) {
+        this.re = Re;
+        this.im = Im;
     }
 
+    public static void main (String[]args){         //complex test
+        Complex a = new Complex(3,7);
+        Complex b = new Complex(5,3);
+        Complex c = a.add(b);
+    }
 }
